@@ -29,7 +29,7 @@ public class GoogleTest {
 		String title=driver.getTitle();		
 		System.out.println(title);
 		
-		
+		System.out.println("new Changes done");
 	}
 
 }
