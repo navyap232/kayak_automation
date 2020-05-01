@@ -21,7 +21,7 @@ public WebDriver getDriver() throws IOException{
 		// Get the browser property from .properties file	
 		    String strBrowser=p.getProperty("browser");
 		    
-		  if(driver==null){
+		  
 			if(strBrowser.equalsIgnoreCase("IE")){
 				System.setProperty("webdriver.ie.driver",p.getProperty("IEDriverPath"));
 				driver=new InternetExplorerDriver();
@@ -39,7 +39,6 @@ public WebDriver getDriver() throws IOException{
 			driver.manage().timeouts().implicitlyWait(30, TimeUnit.SECONDS);
 			driver.manage().deleteAllCookies();
 			
-		  }
 			
 			return driver;
 }
